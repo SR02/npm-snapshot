@@ -41,7 +41,7 @@ if(prereleaseTag) {
   prereleaseTag = "SNAPSHOT";
 }
 
-semver.release =  buildNumber + '-' + prereleaseTag;
+semver.release =  buildNumber + '.' + prereleaseTag;
 const version = semverUtil.stringifySemver(semver);
 
 // Run npm verison without tagging
